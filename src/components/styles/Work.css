@@ -10,7 +10,9 @@
   transition: 0s;
   height: 100vh;
   box-sizing: border-box;
-  will-change: transform;
+  background-color: var(--backgroundColor);
+  position: relative;
+  z-index: 10;
 }
 .work-container {
   margin: auto;
@@ -188,18 +190,6 @@
     gap: 20px;
   }
 }
-/* @media only screen and (max-width: 900px) {
-  .work-image img {
-    max-height: 200px;
-  }
-  .work-section h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  .work-box {
-    gap: 20px;
-  }
-} */
 @media only screen and (max-width: 1025px) {
   .work-container {
     align-content: normal;

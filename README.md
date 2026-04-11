@@ -15,11 +15,7 @@ Please do NOT:
 - Use this project for commercial/client work
 - Create tutorials or content using this exact project
 
-If you use parts of the code, you must provide proper credit linking back to the original repository.
-
-Build your own version — don’t just copy.
-
-— Moncy Yohannan
+— Vedansh Harish Ail
 
 ---
 
