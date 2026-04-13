@@ -44,12 +44,14 @@ const Work = () => {
     let translateX: number = 0;
 
     function setTranslateX() {
+      const container = document.querySelector(".work-container");
       const box = document.getElementsByClassName("work-box");
-      const rectLeft = document
-        .querySelector(".work-container")!
-        .getBoundingClientRect().left;
+      
+      if (!container || box.length === 0) return;
+
+      const rectLeft = container.getBoundingClientRect().left;
       const rect = box[0].getBoundingClientRect();
-      const parentWidth = box[0].parentElement!.getBoundingClientRect().width;
+      const parentWidth = box[0].parentElement?.getBoundingClientRect().width || 0;
       let paddingValue = parseInt(window.getComputedStyle(box[0]).paddingLeft);
       let padding: number = isNaN(paddingValue) ? 40 : paddingValue / 2;
       translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
